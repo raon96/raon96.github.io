@@ -36,16 +36,24 @@ img{
 	text-align: center;
 }
 .btn_box {
-	/*padding-bottom:100px;*/
-	max-width:100%;
-	height:auto
-	display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn_item {
+    flex: 0 0 50%; /* Each item occupies 50% width */
+    max-width: 50%; /* Set maximum width to ensure only 2 items per row */
+    text-align: center; /* Center align the items */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.btn_item img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
 }
 .btn {
 	max-width:100%;
 	height:auto
 	display: block;
-	padding-bottom:120px;
 	background-color:#FFFFFF
 }
 .con1 {
